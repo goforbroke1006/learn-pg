@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:10
+    environment:
+      POSTGRES_USER:      demo
+      POSTGRES_PASSWORD:  demo
+      POSTGRES_DB:        demo
+    ports:
+      - "23432:5432"
+    volumes:
+      - ./migrations/1-scheme.sql:/docker-entrypoint-initdb.d/1-schema.sql
+      - ./migrations/2-data.sql:/docker-entrypoint-initdb.d/2-2-data.sql
