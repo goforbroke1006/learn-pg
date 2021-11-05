@@ -1,8 +1,7 @@
 all: up
 
 up:
-	docker-compose down --volumes
-	docker-compose up -d --remove-orphans
+	docker-compose up --remove-orphans
 
 down:
 	docker-compose down --volumes
