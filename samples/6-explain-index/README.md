@@ -1,4 +1,12 @@
-### Index plans
+# 6 - explain and indexes
+
+### Reproduce steps
+
+* Run queries from **1-seeds.sql** to load fake data
+* Run queries from **session.sql** to analyze queries with/without indexes
+* Check useful queries in **misc.sql**
+
+### Query plans
 
 | Node name | Description |
 |-----------|--------------|
