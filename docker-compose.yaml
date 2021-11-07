@@ -10,4 +10,5 @@ services:
     ports:
       - "5432:5432"
     volumes:
+      - ./.compose/postgres/postgresql.conf:/var/lib/postgresql/data/postgresql.conf
       - ./migrations/:/docker-entrypoint-initdb.d/
